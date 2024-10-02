@@ -52,7 +52,7 @@
     "@pancakeswap/swap-sdk-core": "workspace:*",
     "@pancakeswap/pcsx-sdk": "workspace:*",
     "@pancakeswap/tsconfig": "workspace:*",
-    "tsup": "^6.7.0"
+    "tsup": "catalog:"
   },
   "exports": {
     "./package.json": "./package.json",

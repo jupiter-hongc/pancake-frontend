@@ -19,11 +19,11 @@
     "@pancakeswap/chains": "workspace:*",
     "@pancakeswap/swap-sdk-core": "workspace:*",
     "@pancakeswap/permit2-sdk": "workspace:*",
-    "dayjs": "^1.11.10",
+    "dayjs": "catalog:",
     "viem": "catalog:"
   },
   "devDependencies": {
-    "tsup": "^6.7.0"
+    "tsup": "catalog:"
   },
   "exports": {
     "./package.json": "./package.json",

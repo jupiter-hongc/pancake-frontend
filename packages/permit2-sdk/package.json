@@ -40,6 +40,6 @@
   },
   "devDependencies": {
     "tslib": "^2.6.2",
-    "tsup": "^6.7.0"
+    "tsup": "catalog:"
   }
 }

@@ -18,19 +18,19 @@
   },
   "peerDependencies": {
     "@blocto/sdk": "^0.5.4",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "viem": "catalog:",
     "wagmi": "catalog:",
     "@tanstack/react-query": "^5.52.1"
   },
   "devDependencies": {
-    "@blocto/sdk": "^0.5.4",
+    "@blocto/sdk": "catalog:",
     "@pancakeswap/tsconfig": "workspace:*",
-    "@types/react": "^18.2.21",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "tsup": "^6.7.0",
+    "@types/react": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "tsup": "catalog:",
     "viem": "catalog:",
     "wagmi": "catalog:"
   },
@@ -63,6 +63,6 @@
     }
   },
   "dependencies": {
-    "@walletconnect/ethereum-provider": "^2.14.0"
+    "@walletconnect/ethereum-provider": "catalog:"
   }
 }

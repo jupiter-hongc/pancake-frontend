@@ -16,7 +16,7 @@
     "wagmi": "catalog:"
   },
   "dependencies": {
-    "@layerzerolabs/scan-client": "^0.0.6",
+    "@layerzerolabs/scan-client": "catalog:",
     "@pancakeswap/chains": "workspace:*",
     "bignumber.js": "^9.0.0"
   },

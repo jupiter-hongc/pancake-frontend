@@ -27,19 +27,19 @@
   },
   "dependencies": {
     "@pancakeswap/swap-sdk-core": "workspace:*",
-    "big.js": "^5.2.2",
-    "decimal.js-light": "^2.5.0",
+    "big.js": "catalog:",
+    "decimal.js-light": "catalog:",
     "tiny-invariant": "^1.3.0",
-    "tiny-warning": "^1.0.3",
-    "toformat": "^2.0.0"
+    "tiny-warning": "catalog:",
+    "toformat": "catalog:"
   },
   "peerDependencies": {
     "@aptos-labs/ts-sdk": "1.x"
   },
   "devDependencies": {
-    "@aptos-labs/ts-sdk": "1.12.2",
-    "@types/big.js": "^4.0.5",
-    "tsup": "^6.7.0"
+    "@aptos-labs/ts-sdk": "catalog:",
+    "@types/big.js": "catalog:",
+    "tsup": "catalog:"
   },
   "engines": {
     "node": ">=10"

@@ -27,7 +27,7 @@
     "@pancakeswap/position-managers": "workspace:^",
     "@types/lodash": "^4.14.202",
     "lodash": "^4.17.21",
-    "tsup": "^6.7.0"
+    "tsup": "catalog:"
   },
   "dependencies": {
     "@pancakeswap/chains": "workspace:^",

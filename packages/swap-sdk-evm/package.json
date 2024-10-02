@@ -26,12 +26,12 @@
     "@pancakeswap/chains": "workspace:*",
     "@pancakeswap/swap-sdk-core": "workspace:*",
     "tiny-invariant": "^1.3.0",
-    "tiny-warning": "^1.0.3",
+    "tiny-warning": "catalog:",
     "viem": "catalog:"
   },
   "devDependencies": {
     "@pancakeswap/tsconfig": "workspace:*",
-    "tsup": "^6.7.0"
+    "tsup": "catalog:"
   },
   "exports": {
     "./package.json": "./package.json",

@@ -10,7 +10,7 @@
     "@pancakeswap/hooks": "workspace:*",
     "@pancakeswap/localization": "workspace:*",
     "@pancakeswap/uikit": "workspace:*",
-    "qrcode.react": "^3.1.0"
+    "qrcode.react": "catalog:"
   },
   "peerDependencies": {
     "react": "^18.2.0",

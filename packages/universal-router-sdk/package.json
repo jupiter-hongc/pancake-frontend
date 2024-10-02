@@ -39,7 +39,7 @@
     "@pancakeswap/tokens": "workspace:*",
     "@types/node": "^15.12.2",
     "tslib": "^2.3.0",
-    "tsup": "^6.7.0"
+    "tsup": "catalog:"
   },
   "dependencies": {
     "@pancakeswap/chains": "workspace:*",
@@ -47,7 +47,7 @@
     "@pancakeswap/sdk": "workspace:*",
     "@pancakeswap/smart-router": "workspace:*",
     "@pancakeswap/v3-sdk": "workspace:*",
-    "abitype": "^0.9.8",
+    "abitype": "catalog:",
     "tiny-invariant": "^1.1.0",
     "viem": "catalog:"
   }

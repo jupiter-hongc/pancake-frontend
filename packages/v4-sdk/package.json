@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@pancakeswap/sdk": "workspace:*",
-    "tsup": "^6.7.0"
+    "tsup": "catalog:"
   },
   "engines": {
     "node": ">=10"

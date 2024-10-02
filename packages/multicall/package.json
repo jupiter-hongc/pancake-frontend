@@ -23,7 +23,7 @@
   "devDependencies": {
     "@pancakeswap/tsconfig": "workspace:*",
     "@pancakeswap/utils": "workspace:*",
-    "tsup": "^6.7.0"
+    "tsup": "catalog:"
   },
   "exports": {
     "./package.json": "./package.json",
