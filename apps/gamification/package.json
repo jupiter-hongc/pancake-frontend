@@ -61,7 +61,7 @@
     "graphql": "catalog:",
     "graphql-request": "catalog:",
     "jotai": "catalog:",
-    "js-cookie": "^3.0.5",
+    "js-cookie": "catalog:",
     "lodash": "^4.17.21",
     "next": "catalog:",
     "next-auth": "catalog:",

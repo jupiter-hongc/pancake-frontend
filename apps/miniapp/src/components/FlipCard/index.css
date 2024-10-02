@@ -1,0 +1,29 @@
+.flip-container {
+  perspective: 1000px;
+  z-index: auto;
+}
+
+.flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 600ms;
+}
+
+.flip-card {
+  align-items: center;
+  backface-visibility: hidden;
+  display: flex;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: z-index 600ms;
+  width: 100%;
+}
+
+.flip-card>div {
+  flex: 1;
+}
+
+.flip-card-back {
+  transform: rotate3d(0, 1, 0, 180deg) translateZ(1px);
+}

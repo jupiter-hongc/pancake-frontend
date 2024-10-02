@@ -82,6 +82,9 @@
     "zod": "catalog:"
   },
   "pnpm": {
+    "overrides": {
+      "wagmi": "2.12.12"
+    },
     "patchedDependencies": {
       "@ledgerhq/connect-kit-loader@1.1.2": "patches/@ledgerhq__connect-kit-loader@1.1.2.patch"
     }

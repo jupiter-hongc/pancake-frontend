@@ -9,7 +9,7 @@
   "scripts": {},
   "dependencies": {
     "dayjs": "catalog:",
-    "js-cookie": "^3.0.1",
+    "js-cookie": "catalog:",
     "react": "catalog:",
     "@pancakeswap/swap-sdk-core": "workspace:*",
     "@pancakeswap/utils": "workspace:*",

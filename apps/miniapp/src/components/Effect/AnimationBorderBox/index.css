@@ -1,0 +1,259 @@
+.animate-bull-border {
+  animation: border-animation-heartbeat-bull 2s ease-in-out infinite forwards;
+}
+
+.animate-bear-border {
+  animation: border-animation-heartbeat-bear 2s ease-in-out infinite forwards;
+}
+
+
+.confetti-group {
+  position: absolute;
+  opacity: 0;
+}
+
+.group-1 {
+  left: 0%;
+  top: 50%;
+}
+
+.group-2 {
+  top: 0;
+  left: 25%;
+}
+
+.group-3 {
+  top: 0;
+  right: 25%;
+}
+
+.group-4 {
+  right: 0%;
+  top: 50%;
+}
+
+.group-5 {
+  left: 50%;
+  bottom: 0;
+}
+
+.circle {
+  position: absolute;
+  display: block;
+  left: -5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  animation: circle-frame 1.5s ease forwards infinite;
+}
+
+.triangle {
+  position: absolute;
+  left: 5px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top-width: 12px;
+  border-top-style: solid;
+  animation: triangle-frame 1.5s ease forwards infinite;
+}
+
+.animate-run .group {
+  opacity: 1;
+}
+
+.animate-run .group-1 {
+  animation: confetti-frame-1 1.5s ease forwards infinite;
+}
+
+.animate-run .group-2 {
+  animation: confetti-frame-2 1.5s ease forwards infinite;
+}
+
+.animate-run .group-3 {
+  animation: confetti-frame-3 1.5s ease forwards infinite;
+}
+
+.animate-run .group-4 {
+  animation: confetti-frame-4 1.5s ease forwards infinite;
+}
+
+.animate-run .group-5 {
+  animation: confetti-frame-5 1.5s ease forwards infinite;
+}
+
+@keyframes confetti-frame-1 {
+  from {
+    transform: translate3d(0, 10px, 0) rotate(245deg) scale(0.7);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(-20px, 15px, 0) rotate(180deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-frame-2 {
+  from {
+    transform: translate3d(0, 0, 0) rotate(-40deg) scale(0.7);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(-20px, -35px, 0) rotate(-80deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-frame-3 {
+  from {
+    transform: translate3d(0, -8px, 0) rotate(40deg) scale(0.7);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(20px, -45px, 0) rotate(80deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-frame-4 {
+  from {
+    transform: translate3d(-8px, 0, 0) rotate(90deg) scale(0.7);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(28px, 5px, 0) rotate(130deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-frame-5 {
+  from {
+    transform: translate3d(8px, 0, 0) rotate(150deg) scale(0.7);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(15px, 35px, 0) rotate(180deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes circle-frame {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-8px, 5px, 0);
+  }
+}
+
+@keyframes triangle-frame {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(8px, -5px, 0);
+  }
+}
+
+@keyframes border-animation-heartbeat-bull {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 0px rgba(134, 231, 207, 1);
+  }
+
+  30% {
+    transform: scale(1.1);
+  }
+
+  38% {
+    transform: scale(1);
+  }
+
+  46% {
+    transform: scale(1.03);
+  }
+
+  54% {
+    transform: scale(1);
+  }
+
+  62% {
+    transform: scale(1.02);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  76% {
+    transform: scale(1.02);
+  }
+
+  90% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+    ;
+  }
+}
+
+@keyframes border-animation-heartbeat-bear {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 0px rgba(249, 174, 215, 1);
+  }
+
+  15% {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 1px 1px rgba(249, 174, 215, .9);
+  }
+
+  30% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 2px rgba(249, 174, 215, .8);
+  }
+
+  40% {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 0px 3px rgba(249, 174, 215, .7);
+  }
+
+  50% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 4px rgba(249, 174, 215, .6);
+  }
+
+  60% {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 0px 5px rgba(249, 174, 215, .5);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 6px rgba(249, 174, 215, .3);
+  }
+
+  80% {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 0px 7px rgba(249, 174, 215, .1);
+  }
+
+  90% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 7px rgba(249, 174, 215, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 7px rgba(249, 174, 215, 0);
+    ;
+  }
+}

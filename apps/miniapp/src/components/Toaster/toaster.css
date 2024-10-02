@@ -1,0 +1,30 @@
+[data-sonner-toast]:has([data-icon]) {
+  @apply flex;
+}
+
+[data-sonner-toast]:has([data-icon]) [data-icon] {
+  @apply w-6 h-6;
+  top: -2px;
+}
+
+[data-sonner-toast] [data-title] {
+  @apply !font-normal;
+}
+
+[data-sonner-toaster][data-y-position='top'] {
+  top: max(64px, env(safe-area-inset-top)) !important;
+}
+
+[data-sonner-toaster][data-x-position='right'] {
+  right: max(8px, env(safe-area-inset-right)) !important;
+}
+
+@media screen(md) {
+  [data-sonner-toaster][data-y-position='top'] {
+    top: max(88px, env(safe-area-inset-top)) !important;
+  }
+
+  [data-sonner-toaster][data-x-position='right'] {
+    right: max(8px, env(safe-area-inset-right)) !important;
+  }
+}

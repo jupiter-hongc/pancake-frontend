@@ -1,0 +1,35 @@
+.wave-01 {
+  animation: rotate 10s linear infinite;
+  transition: all 500ms linear;
+}
+
+.wave-02 {
+  animation: rotate 7s linear infinite;
+  transition: all 500ms linear;
+
+}
+
+.wave-03 {
+  animation: rotate 5s linear infinite;
+  transition: all 500ms linear;
+}
+
+.shadow-animation {
+  transition: box-shadow 500ms ease;
+  animation: shadow-wave-frame 3s ease-in-out infinite forwards;
+}
+
+
+@keyframes shadow-wave-frame {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

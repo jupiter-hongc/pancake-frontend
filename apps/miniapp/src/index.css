@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(var(--colors-t-third));
+    border-radius: 4px;
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  :root {
+    @apply text-t-primary font-kanit text-body select-none max-h-[var(--tg-viewport-stable-height,100dvh)] overflow-hidden;
+  }
+
+  body {
+    @apply max-h-[var(--tg-viewport-stable-height,100dvh)] overflow-auto;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    --colors-t-primary: 40 13 95;
+    --colors-t-secondary: 118 69 217;
+    --colors-t-fill-secondary: 122 110 170;
+    --colors-t-third: 114 118 143;
+    --colors-t-disabled: 198 198 198;
+    --colors-t-placeholder: 192 205 211;
+    --colors-t-onColor: 255 255 255;
+    --colors-t-consistent: 255 255 255;
+    --colors-t-inverse: 0 0 0;
+    --colors-t-error: 237 75 158;
+    --colors-t-buy: 49 208 170;
+    --colors-t-sell: 237 75 158;
+    --colors-t-link: 31 199 212;
+    --colors-t-linkHover: 51 218 231;
+    --colors-t-white: 255 255 255;
+    --colors-t-emphasize: 111 76 209;
+
+    /* border */
+    --colors-border-line: 231 227 235;
+    --colors-border-lineSubtle: 242 243 244;
+    --colors-border-lineStrong: 220 224 227;
+
+    /* background */
+    --colors-background-bg1: 255 255 255;
+    --colors-background-bg2: 250 249 250;
+
+    --colors-background-bg1Accent01: 0 0 0 / 0.15;
+    --colors-background-bg1Accent02: 69 67 77;
+
+    /* interactive */
+    --colors-interactive-primary: 31 199 212;
+    --colors-interactive-borderGradientStart: 83 222 233;
+    --colors-interactive-borderGradientEnd: 128 81 214;
+    --colors-interactive-cardGradientStart: 229 253 255;
+    --colors-interactive-cardGradientEnd: 243 239 255;
+    --colors-interactive-primaryHover: 83 222 233;
+    --colors-interactive-primaryActive: 0 152 161;
+    --colors-interactive-primaryGradient: 31 199 212;
+    --colors-interactive-primaryAccent01: 76 119 122;
+    --colors-interactive-primaryAccent02: 49 81 83;
+    --colors-interactive-buy: 49 208 170;
+    --colors-interactive-buyHover: 123 224 200;
+    --colors-interactive-buyActive: 94 206 194;
+
+    --colors-interactive-sell: 237 75 158;
+    --colors-interactive-sellHover: 243 139 192;
+    --colors-interactive-sellActive: 244 110 185;
+    --colors-interactive-sellGradient: linear-gradient(
+      90deg,
+      #ef3e9e 0%,
+      #d12683 100%
+    );
+    --colors-interactive-sellAccent01: 74 42 59;
+    --colors-interactive-interactiveBg: 255 255 255;
+    --colors-interactive-interactiveBgHover: 247 247 247;
+    --colors-interactive-interactiveBgActive: 232 232 232;
+    --colors-interactive-interactiveBgSelected: 240 240 240;
+    --colors-interactive-interactive01: 238 234 244;
+    --colors-interactive-interactive01Hover: 247 247 247;
+    --colors-interactive-interactive01Active: 232 232 232;
+    --colors-interactive-interactive01Selected: 240 240 240;
+    --colors-interactive-interactive02: 255 255 255;
+    --colors-interactive-interactive02Hover: 247 247 247;
+    --colors-interactive-interactive02Active: 232 232 232;
+    --colors-interactive-interactive02Selected: 240 240 240;
+    --colors-interactive-disabled: 233 234 235;
+    --colors-interactive-fillDisabled: 189 194 196;
+    --colors-interactive-interactivePopup: 238 234 244;
+    --colors-interactive-tertiary: 239 244 245;
+    --colors-interactive-tertiary20: 226 237 238;
+    --colors-interactive-expandPositive: 134 231 207;
+    --colors-interactive-expandDestructive: 249 174 215;
+
+    /* support */
+    --colors-support-success: 29 177 168;
+    --colors-support-error: 237 75 158;
+    --colors-support-warning: 248 199 72;
+    --colors-support-info: 24 31 51;
+    /* others */
+    --colors-highLight: 118 69 217;
+    --colors-overlay: rgba(0, 0, 0, 0.5);
+
+    /* extra colors */
+    --colors-cake-page-background: linear-gradient(
+      180deg,
+      rgba(203, 215, 239, 1) 0%,
+      rgba(154, 159, 208, 1) 100%
+    );
+    --colors-cake-page-background02: linear-gradient(
+      131.64deg,
+      #e6fdff 0.5%,
+      #f2f0ff 71.43%
+    );
+    --colors-border-inputSecondary: 215 202 236;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .sheet-content {
+    @apply rounded-t-2xl;
+  }
+
+  @media screen(sm) {
+    .sheet-content {
+      @apply rounded-t-none rounded-l-2xl;
+    }
+  }
+
+  .input-text-field,
+  .input-base-input {
+    @apply rounded-lg;
+  }
+
+  .dialog-content {
+    @apply rounded-[2rem];
+  }
+
+  /* @astrolabs/broker-widget theme class */
+
+  .order-form-card {
+    @apply rounded-2xl;
+  }
+
+  .radio-option {
+    @apply rounded-lg;
+  }
+
+  .currency-input {
+    @apply rounded-lg;
+  }
+
+  .direction-switch-long {
+    @apply rounded-l-2xl rounded-r-none;
+  }
+
+  .direction-switch {
+    @apply rounded-l-2xl rounded-r-2xl;
+  }
+
+  .direction-switch-short {
+    @apply rounded-r-2xl rounded-l-none;
+  }
+}
+
+@layer components {
+  button {
+    outline: 0;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* metanask sdk fix  */
+/* When open Drawer metanask sdk dialog will not able to click do to some reason */
+.select-modal {
+  @apply !pointer-events-auto;
+}
+
+/* This is a Hack fix for Telegram mini app when opening virtual keyboard the footer is blocking the view of the app  */
+#root:has(input:focus-within) .main-nav.within-telegram {
+  @apply static;
+}

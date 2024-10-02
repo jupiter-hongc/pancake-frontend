@@ -82,7 +82,7 @@
     "d3": "catalog:",
     "happy-dom": "catalog:",
     "jest-styled-components": "catalog:",
-    "js-cookie": "*",
+    "js-cookie": "catalog:",
     "next-themes": "catalog:",
     "polished": "catalog:",
     "react": "catalog:",
@@ -103,11 +103,11 @@
     "vite-tsconfig-paths": "catalog:"
   },
   "peerDependencies": {
-    "js-cookie": "*",
+    "js-cookie": "^3.0.5",
     "next-themes": "^0.2.1",
-    "react": "^18.2.0",
+    "react": "18.2.0",
     "react-device-detect": "*",
-    "react-dom": "^18.2.0",
+    "react-dom": "18.2.0",
     "react-redux": "^8.0.5",
     "react-transition-group": "*",
     "remark-gfm": "*",

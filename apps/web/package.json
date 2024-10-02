@@ -109,7 +109,7 @@
     "graphql": "catalog:",
     "graphql-request": "catalog:",
     "jotai": "catalog:",
-    "js-cookie": "^3.0.1",
+    "js-cookie": "catalog:",
     "lightweight-charts": "catalog:",
     "local-storage": "catalog:",
     "localforage": "catalog:",
